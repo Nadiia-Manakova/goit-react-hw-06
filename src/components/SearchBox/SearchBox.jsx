@@ -10,7 +10,7 @@ export const SearchBox = () => {
   const filter = useSelector(selectNameFilter);
 
   const handleFilterChange = (value) => {
-    dispatch(setStatusFilter(value));
+    dispatch(changeFilter(value));
   };
 
   return (
