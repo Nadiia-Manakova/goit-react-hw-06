@@ -7,7 +7,7 @@ import { setLocale } from "yup";
 import { nanoid } from "nanoid";
 import css from "./ContactForm.module.css";
 
-export const ContactForm = ({ onAdd }) => {
+export const ContactForm = () => {
   const FeedbackSchema = Yup.object().shape({
     name: Yup.string()
       .min(3, "Too Short!")
